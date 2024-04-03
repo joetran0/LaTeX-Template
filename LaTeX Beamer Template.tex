@@ -1,0 +1,56 @@
+\documentclass[aspectratio=169, 11pt]{beamer}
+\usepackage{amsfonts, amssymb, amsmath, amsthm, booktabs, hyperref, pgfplots, tikz, xcolor, graphicx, multicol, mathptmx}
+
+\usetheme{Madrid}
+\usecolortheme{default}
+
+\definecolor{myRed}{RGB}{225, 15, 15}
+\definecolor{myGreen}{RGB}{15, 225, 15}
+\definecolor{myBlue}{RGB}{15, 15, 225}
+
+\setbeamertemplate{block}[shadow=true]
+\setbeamertemplate{title page}[default][rounded=true, shadow=true]
+\setbeamertemplate{frame}[colsep=-4bp, rounded=true, shadow=true]
+\setbeamercolor{frametitle right}{bg=myRed}
+\setbeamercolor{title}{use=structure, fg=white, bg=myRed}
+\setbeamercolor{structure}{fg=myRed}
+\setbeamercolor{background canvas}{bg=myRed!1}
+\setbeamercolor{block title}{bg=myBlue, fg=white}
+\setbeamercolor{block title alerted}{bg=myRed, fg=white}
+\setbeamercolor{block title example}{bg=myGreen, fg=white}
+
+\title{Title}
+\author{Subtitle}
+\author{Author}
+\institute{Institution}
+\logo{}
+\date{\today}
+
+\newcommand{\K}{\mathbb{K}}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\N}{\mathbb{N}}
+
+\begin{document}
+
+\begin{frame}[fragile]
+    \maketitle
+\end{frame}
+
+\begin{frame}{Frame Title}
+    \begin{block}{Block}
+        Block
+    \end{block}
+
+    \begin{exampleblock}{Example Block}
+        Example
+    \end{exampleblock}
+
+    \begin{alertblock}{Alert Block}
+        Alert Block
+    \end{alertblock}
+\end{frame}
+
+\end{document}
